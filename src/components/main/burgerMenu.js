@@ -2,7 +2,7 @@ import React, {useState, useEffect} from "react";
 import * as FaIcons from "react-icons/fa";
 import {Link} from "react-router-dom"
 import {api} from "../../http/api";
-import logo from "./../../images/burgerLogo.png"
+import logo from "./../../images/oshmpu.jpg"
 
 function Navbar() {
     const [sidebar, setSidebar] = useState(false);
@@ -68,7 +68,11 @@ function Navbar() {
                                     </Link>
                                 </div>
                             </div>
-                            <Link to="/chronology" className="header__section--items__a__2">Хронология</Link>
+                            <Link to="/chronology" className="header__section--items__a__2">Кафедра</Link>
+<Link to="/chronology" className="header__section--items__a__2">Окуунун программасы</Link>
+<Link to="/chronology" className="header__section--items__a__2">Наука</Link>
+
+
                         </div>
 
                     </ul>
