@@ -1,5 +1,4 @@
 import './styles/App.css';
-import {media} from "./components/media";
 import Header from "./components/main/Header";
 import "./styles/styles.scss";
 import "./styles/icons.css";
