@@ -19,7 +19,7 @@ const Header = () => {
             <div className="container">
                 <div className="header__section">
                     <Link to="/">
-                        <img src={logo} alt="" style={{width:'100px', height:'100px', borderRadius: '50%'}}/>
+                        <img src={logo} alt="" style={{width: '10vw', height: '10vw', borderRadius: '50%'}} />
                     </Link>
                     <div className="header__section--items">
                         <span className="header__section--items__nav">
