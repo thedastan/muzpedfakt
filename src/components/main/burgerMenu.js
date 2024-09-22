@@ -39,7 +39,7 @@ function Navbar() {
                 <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
                     <ul className="nav-menu-items">
                         <span onClick={() => setSidebar(false)}><Link to="/"> <img src={logo} alt="img"
-                                                                                   className="nav__logo"/></Link></span>
+                                                                                  style={{width:'100px', height:'100px'}} className="nav__logo"/></Link></span>
                         <div className="header__section--items__2">
                             <div className="dropdown__2">
                                 <button className="dropbtn__2">Негизги маалымат <i className="fa-solid fa-angle-down"/>
