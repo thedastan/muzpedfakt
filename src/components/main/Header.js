@@ -24,7 +24,7 @@ const Header = () => {
                     <div className="header__section--items">
                         <span className="header__section--items__nav">
                         <div className="dropdown">
-                            <button className="dropbtn">Информация факультет <i className="fa-solid fa-angle-down"/>
+                            <button className="dropbtn">Факультет туралуу маалымат <i className="fa-solid fa-angle-down"/>
                             </button>
                             <div className="dropdown-content">
                                 <Link to="/admin">Администрация</Link>
@@ -45,12 +45,10 @@ const Header = () => {
                                 <Link to="/program">
                                     Программалык акккредитация
                                 </Link>
-
-
                             </div>
                         </div>
-                        <Link to="/chronology" className="header__section--items__a">Кафедра</Link>
-                        <Link to="/chronology" className="header__section--items__a">Наука</Link>
+                        <Link to="/chronology" className="header__section--items__a">Кафедралар</Link>
+                        <Link to="/chronology" className="header__section--items__a">Илимий иштер</Link>
                         <Link to="/chronology" className="header__section--items__a">Окуунун программасы</Link>
                         </span>
                         <BurgerMenu/>

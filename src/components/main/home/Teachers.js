@@ -57,7 +57,7 @@ const Teachers = () => {
     return (
         <section id="teachers">
             <div className="container">
-                <h3 onClick={() => alert(JSON.stringify(datas))}>Алдынкы мугалимдер</h3>
+                <h3 onClick={() => alert(JSON.stringify(datas))}>Жаңылыктар</h3>
                 <div className="teachers__sliders">
                     <Slider {...settings}>
                         {res.map(el => (

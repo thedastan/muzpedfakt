@@ -9,9 +9,7 @@ const Hero = () => {
                 <div className="hero-general">
                     <div>
                         <h1 className="hero-general__title" style={{fontSize: media(30, 45), marginBottom: media(20, 60)}}>Математика жана  Компьютердик <br/> Технологиялар факультети. </h1>
-                        <p className="hero-general__desc" style={{fontSize: media(15, 20)}}>Биздин эң сонун факультет менен таанышууну каалагандардын
-                            бардыгын тосуп алууга
-                            кубанычтабыз!</p>
+                        <p className="hero-general__desc" style={{fontSize: media(15, 20)}}>Келечегинди биз менен башта!</p>
 
                         <a href="#onas" className="hero-general__block">
                             <div/>
