@@ -10,7 +10,7 @@
     "ajv": "^8.17.1",
     "ajv-keywords": "^5.1.0",
     "axios": "^0.27.2",
-    "node-sass": "^7.0.1",
+    "node-sass": "^7.0.3",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-icons": "^4.3.1",
