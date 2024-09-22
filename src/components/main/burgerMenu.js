@@ -88,7 +88,7 @@ function Navbar() {
                 Окуунун программасы
               </Link>
               <Link to="/chronology" className="header__section--items__a__2">
-                Наука
+                Илимий иштер
               </Link>
             </div>
           </ul>
