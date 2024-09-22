@@ -1,0 +1,87 @@
+#gallery {
+  .gallery-general {
+    &__title {
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      color: #000000;
+      margin-bottom: 60px;
+
+    }
+
+    div {
+      display: flex;
+
+      img {
+        padding: 0 20px 0 0;
+      }
+      span {
+        margin: 0 0 0 30px;
+        img {
+          padding: 0 0 20px 30px;
+        }
+        //width: 600px;
+      }
+    }
+    &__img {
+      width: 398px;
+      height: 492px;
+      //object-fit: contain;
+    }
+    &__img2 {
+      width: 344px;
+      height: 240px;
+      //object-fit: contain;
+    }
+    &__img3 {
+      width: 398px;
+      height: 240px;
+      //object-fit: contain;
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1200px) {
+  #gallery .gallery-general div img {
+    padding: 0 0 0 0;
+  }
+  #gallery .gallery-general div span {
+    margin: 0 0 0 -24px;
+    display: flex;
+    flex-direction: column;
+  }
+  #gallery .gallery-general div span img {
+    padding: 0 0 0 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  #gallery .gallery-general div {
+    display: flex;
+    flex-direction: column;
+  }
+  #gallery .gallery-general div span {
+    margin: 0 0 0 0;
+    display: flex;
+    flex-direction: column;
+  }
+  #gallery .gallery-general div span img {
+    padding: 20px 0 0 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  #gallery .gallery-general__img {
+    padding: 20px 0 0 0;
+    width: 90%;
+    height: 100%;
+  }
+}

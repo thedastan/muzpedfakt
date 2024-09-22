@@ -1,0 +1,44 @@
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  div {
+    h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 27px;
+      line-height: 24px;
+      letter-spacing: 0.2px;
+      color: #000;
+    }
+
+    h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 24px;
+      letter-spacing: 0.2px;
+      color: #00656B;
+
+    }
+
+    button {
+      padding: 10px 60px;
+      background: none;
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 24px;
+      text-align: center;
+      letter-spacing: 0.2px;
+      color: #00656B;
+      border: 3px solid #00656B;
+      border-radius: 20px;
+      cursor: pointer
+    }
+  }
+}

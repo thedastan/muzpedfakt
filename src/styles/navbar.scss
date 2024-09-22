@@ -1,0 +1,229 @@
+.menu-icon {
+  color: rgb(7, 1, 1);
+  font-size: 25px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.nav-menu {
+  position: absolute;
+  top: 30px;
+  right: -100%;
+  transition: 0.4s;
+}
+
+.nav-menu-items {
+  list-style: none;
+  position: absolute;
+  top: -29px;
+  z-index: -1;
+  width: 300px;
+  right: -11px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.nav-menu-items li {
+  padding: 20px;
+  text-transform: uppercase;
+}
+
+.nav-menu-icons {
+  font-size: 18px;
+}
+
+.active {
+  right: 10px;
+}
+
+.navbar {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    display: block;
+    height: 100%;
+  }
+
+  .menu-icon {
+    color: black;
+    font-size: 25px;
+    position: absolute;
+    top: 25px;
+    right: 43px;
+    cursor: pointer;
+    z-index: 234567890;
+  }
+
+  .nav-menu-items {
+    list-style: none;
+    background: #fff;
+    position: absolute;
+    top: -29px;
+    z-index: 123456;
+    width: 330px;
+    right: -12px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fff;
+    box-shadow: 0 3px 30px black;
+    flex-direction: column;
+  }
+
+  .nav-menu-items li {
+    padding: 20px;
+    color: white;
+    text-transform: uppercase;
+    transition: .4s;
+  }
+
+  .nav-menu-items li {
+    transform: scale(1.1);
+  }
+
+}
+
+.nav__logo {
+  top: 10px;
+  position: absolute;
+  left: 10px;
+}
+
+.dropbtn__2 {
+  background: none;
+  color: black;
+  padding: 6px;
+  font-size: 16px;
+  border: none;
+}
+
+/* Контейнер <div> - необходим для размещения выпадающего содержимого */
+.dropdown__2 {
+  position: relative;
+  display: inline-block;
+  margin: 30px 50px;
+  transition: 0.5s;
+  width: 76%;
+}
+
+/* Выпадающее содержимое (скрыто по умолчанию) */
+.dropdown-content__2 {
+  display: none;
+  margin-left: -16px;
+  position: absolute;
+  background-color: #ffffff;
+  padding: 10px 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+  min-width: 160px;
+  z-index: 1;
+}
+
+/* Ссылки внутри выпадающего списка */
+.dropdown-content__2 {
+  a , Link {
+    color: black;
+    padding: 5px 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    text-decoration: none;
+    transition: 0.1s;
+    margin: 5px 0;
+    display: block;
+  }
+
+}
+
+/* Изменение цвета выпадающих ссылок при наведении курсора */
+.dropdown-content__2 a:hover {
+  background-color: #00656B;
+  border-radius: 10px;
+  color: #000;
+}
+
+/* Показать выпадающее меню при наведении курсора */
+.dropdown__2:hover .dropdown-content__2 {display: block;}
+
+/* Изменение цвета фона кнопки раскрывающегося списка при отображении содержимого раскрывающегося списка */
+//.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+
+.header__section--items__a__2 {
+  color: #000;
+  padding: 5px 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 97px;
+  text-decoration: none;
+  transition: 0.1s;
+  margin: 0 40px;
+}
+
+
+.menu-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  z-index: 9999999;
+}
+
+.burger {
+  width: 50px;
+  height: 6px;
+  background: #000;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+  transition: all 0.5s ease-in-out;
+}
+
+.burger:before,
+.burger:after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 6px;
+  background: #000;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+  transition: all 0.5s ease-in-out;
+}
+
+.burger:before {
+  transform: translateY(-15px);
+}
+
+.burger:after {
+  transform: translateY(15px);
+}
+
+.menu-btn.open .burger {
+  transform: translateX(-50px);
+  background: transparent;
+  box-shadow: none;
+}
+
+.menu-btn.open .burger:before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+
+.menu-btn.open .burger:after {
+  transform: rotate(-45deg) translate(35px, 35px);
+}
+
