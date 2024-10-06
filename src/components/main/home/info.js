@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import school from "./../../../images/факультет.jpg"
 import child from "./../../../images/students.png"
-import book from "./../../../images/book.png"
 import teach from "./../../../images/teach.png"
 import {media} from "../../media";
 

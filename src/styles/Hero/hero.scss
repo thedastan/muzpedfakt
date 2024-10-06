@@ -7,6 +7,7 @@
     justify-content: space-between;
     align-items: center;
     padding-top: 70px;
+    position: absolute;
 
     &__title {
       font-family: 'Montserrat', sans-serif;
@@ -43,6 +44,7 @@
       transition: .4s;
       cursor: pointer;
       display: none;
+      // position: absolute;
       &:hover {
         transform: scale(1.1);
       }
@@ -53,7 +55,7 @@
       justify-content: center;
       align-items: center;
       position: absolute;
-      left: 110px;
+      // left: 110px;
       transition: .4s;
 
       &:hover {

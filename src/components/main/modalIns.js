@@ -29,7 +29,9 @@ const ModalIns = ({modal2, setModal2, dataModal}) => {
                             <ul className="tool-general__modal__block__nav">
                                 {
                                     arrFil.map(el => (
-                                        <li><a href={el.file} target="_blank">{el.name_file}</a></li>
+                                        <li key={el.id}>
+                                            <a href={el.file} target="_blank" rel="noopener noreferrer">{el.name_file}</a>
+                                        </li>
                                     ))
                                 }
                             </ul>
@@ -39,6 +41,7 @@ const ModalIns = ({modal2, setModal2, dataModal}) => {
             }
         </div>
     );
+    
 };
 
 export default ModalIns;

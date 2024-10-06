@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react';
 import {api} from "../../http/api";
-import ModalIns from "../../components/main/modalIns";
 import ModalProgramm from "../../components/main/modalProgramm";
 import Spiner from "../../components/main/Spiner";
 
@@ -36,30 +35,8 @@ const Tool = () => {
                                 <button onClick={() => click(el)}>{el.name}</button>
                             )) : <Spiner/>
                         }
-                        {/*<button onClick={() => setModal2(true)}>Мектептин уставы</button>*/}
-                        {/*<button onClick={() => setModal2(true)}>Жоболор</button>*/}
-                        {/*<button onClick={() => setModal2(true)}>Буйруктар</button>*/}
-                        {/*<button onClick={() => setModal2(true)}>Мектебинин иш планы</button>*/}
-                        {/*<button onClick={() => setModal2(true)}>Насаатчылык</button>*/}
-                        {/*<button onClick={() => setModal2(true)}>Графиктер</button>*/}
-                        {/*<button onClick={() => setModal2(true)}>Анализдер</button>*/}
-                        {/*<button onClick={() => setModal2(true)}>Жоболор</button>*/}
-                    </div>
-                    {/*{modal2 && (*/}
-                    {/*    <div className="program-general__modal">*/}
-                    {/*        <div className="program-general__modal__block">*/}
-                    {/*            <h1 onClick={() => setModal2(false)}>закрыть</h1>*/}
-                    {/*            <div>*/}
-                    {/*                <ul className="program-general__modal__block__nav">*/}
-                    {/*                    <li><a href="#"> Мектеп ичиндеги көзөмөл</a></li>*/}
-                    {/*                    <li><a href="#"> Мектеп ичиндеги көзөмөл</a></li>*/}
-                    {/*                    <li><a href="#"> Мектеп ичиндеги көзөмөл</a></li>*/}
-                    {/*                    <li><a href="#"> Мектеп ичиндеги көзөмөл</a></li>*/}
-                    {/*                </ul>*/}
-                    {/*            </div>*/}
-                    {/*        </div>*/}
-                    {/*    </div>*/}
-                    {/*)}*/}
+                         </div>
+                     
                 </div>
             </div>
         </section>

@@ -13,7 +13,7 @@ const Teachers = () => {
     }, [])
     console.log(teacher)
     return (
-        <section id="teach" style={{minHeight:"75vh"}}>
+        <section id="teach" style={{minHeight:"75vh", padding:"150px 0"}}>
             <div className="container">
                 <div className="tech-general">
                     <h1 className="teach-general__title">Мугалимдер</h1>
@@ -23,8 +23,8 @@ const Teachers = () => {
                                 teacher?.map(el => {
                                     return (
                                         <div className="teach-general__block__square" key={el.id}>
-                                            <div className="teach-general__block__square__img"><img src={el?.image}
-                                                                                                    alt="img"/></div>
+                                            <div className="teach-general__block__square__img">
+                                            <img src={el?.image} alt="img"/></div>
                                             <h1>{el?.full_name}</h1>
                                             <p>{el?.lesson}</p>
                                             <p>{el?.experience}</p>
