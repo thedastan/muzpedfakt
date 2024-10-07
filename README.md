@@ -1,1 +1,1 @@
-m
+https://mjktf.edu.kg
