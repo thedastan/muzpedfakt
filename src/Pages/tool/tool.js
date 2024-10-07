@@ -40,7 +40,7 @@ const Tool = () => {
   };
 
   return (
-    <section id="tool" style={{ minHeight: "75vh" }}>
+    <section id="tool" style={{ padding:"200px 0" }}>
       <div className="container">
         <div className="tool-general">
           <h1 className="tool-general__title">
@@ -55,7 +55,7 @@ const Tool = () => {
                       .map(
                         (file, fileIndex) =>
                           file.file && (
-                            <span key={fileIndex}  >{file.name_file}</span>
+                            <span key={fileIndex}>{file.name_file}</span>
                           )
                       )
                       .shift()}
