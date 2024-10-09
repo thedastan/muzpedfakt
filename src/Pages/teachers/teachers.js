@@ -23,11 +23,13 @@ const Teachers = () => {
                                 teacher?.map(el => {
                                     return (
                                         <div className="teach-general__block__square" key={el.id}>
-                                            <div className="teach-general__block__square__img">
+                                            <div className="teach-general__block__square__img"  >
                                             <img src={el?.image} alt="img"/></div>
-                                            <h1>{el?.full_name}</h1>
+                                             <div style={{display:"flex",flexDirection:"column", alignItems:"center"}}>
+                                             <h1>{el?.full_name}</h1>
                                             <p>{el?.lesson}</p>
                                             <p>{el?.experience}</p>
+                                             </div>
                                         </div>
                                     )
                                 })

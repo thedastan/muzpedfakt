@@ -33,9 +33,11 @@ const Admin = () => {
                   <div className="admin-general__block__square__img">
                     <img src={el?.image} alt="img" />
                   </div>
+                  <div style={{display:"flex",flexDirection:"column", alignItems:"center",textAlign:'center'}}> 
                   <h1>{el?.fullname}</h1>
                   <p>{el?.lesson}</p>
-                  <p>{el?.position}</p>
+                  <p>{el?.position}</p> 
+                  </div>
                 </div>
               );
             })}

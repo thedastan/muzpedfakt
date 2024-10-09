@@ -11,11 +11,11 @@ const Chronology = () => {
 
   const fetchData = async () => {
     try {
-      const { data } = await api.get("/department"); // Using axios with full URL
+      const { data } = await api.get("/department");  
       setDataCh(data);
       console.log(data, "data");
     } catch (error) {
-      console.error("Error fetching accreditation data", error);
+      console.error("Error", error);
     }
   };
 
@@ -33,35 +33,7 @@ const Chronology = () => {
             dataCh?.map((el) => (
               <div className="chronology__general--datas">
                 <div className="chronology__general--datas--data">
-                  <div>
-                    {el.url_video ? (
-                      <div
-                        style={{
-                          width: media(280, 200),
-                          height: media(150, 300),
-                        }}
-                        className="player"
-                      >
-                        <ReactPlayer
-                          url={el.url_video}
-                          style={{
-                            width: media(280, 200),
-                            height: media(150, 300),
-                          }}
-                        />
-                      </div>
-                    ) : (
-                      <img
-                        src={el.image}
-                        alt="img"
-                        style={{
-                          width: media(280, 500),
-                          height: media(150, 300),
-                        }}
-                      />
-                    )}
-                  </div>
-
+                  
                   <div
                     className="chronology__general--datas--data__titles"
                     style={{ width: media(300, 510) }}

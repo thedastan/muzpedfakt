@@ -15,6 +15,8 @@ import Admin from "./Pages/admin/admin";
 import ChronologyDetails from "./Pages/Details/ChronologyDetails";
 import Science from "./Pages/science/Science";
 import Curriculum from "./Pages/curriculum/Curriculum";
+import ScienceDetail from "./Pages/DetailsSc/ScienceDetail";
+import CurriculumDetails from "./Pages/DetailsCu/CurriculumDetails";
 
 function App() {
   return (
@@ -31,7 +33,10 @@ function App() {
         <Route path="/category/:id" element={<CategoryDetail />} />
         <Route path="/admin" element={<Admin />} />
         <Route path="/science" element={<Science />} />
+        <Route path="/DetailsSc/:id" element={<ScienceDetail />} />
         <Route path="/curriculum" element={<Curriculum />} />
+        <Route path="/DetailsCu/:id" element={<CurriculumDetails />} />
+
       </Routes>
       <Footer />
     </>
