@@ -3,9 +3,7 @@ import { useParams } from "react-router-dom";
 import { api } from "../../http/api";
 import "../../styles/CategoryDetails/categoryDetails.scss";
 
-import { media } from "../../components/media";
 import Spiner from "../../components/main/Spiner";
-import { CiSaveDown2 } from "react-icons/ci";
 
 const ChronologyDetails = () => {
   const { id } = useParams();
@@ -19,6 +17,13 @@ const ChronologyDetails = () => {
       setData(data);
     });
   }, [data]);
+
+
+  const handleFileClick = (fileUrl) => {
+    if (fileUrl) {
+      window.open(fileUrl, "_blank");
+    }
+  };  
 
   console.log(data, "categoryDatail");
   return (
@@ -35,10 +40,9 @@ const ChronologyDetails = () => {
                  <div className="box">
                  <div key={index} className="card">
                   <h2>{department.name_file}</h2>
-                  <a href={department.file} style={{color:"black"}} target={"_blank"}>PDF file</a>
-
-                  <a className="dow" href="/path/to/file.pdf" style={{color: "black"}} download><CiSaveDown2 /></a>
-
+                  <button style={{border:"none" , fontSize:"22px", background:"white",cursor:"pointer"}} onClick={() => handleFileClick(department.file)}>
+                    PDF file
+                    </button>
                 </div>
                 </div>
               ))}

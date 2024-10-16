@@ -3,7 +3,6 @@ import "../../styles/Chronology/chronology.scss";
 import { media } from "../../components/media";
 import { api } from "../../http/api";
 import Spiner from "../../components/main/Spiner";
-import ReactPlayer from "react-player";
 import { Link } from "react-router-dom";
 
 const Chronology = () => {

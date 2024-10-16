@@ -33,21 +33,16 @@ const Header = () => {
                 </button>
                 <div className="dropdown-content">
                   <Link to="/admin">Администрация</Link>
-                  <Link to="/teachers">Мугалимдер</Link>
+                  <Link to="/teachers">Окутуучулар</Link>
                   {data.map((el) => (
                     <Link to={`/category/${el.id}`}>{el.name}</Link>
                   ))}
                 </div>
               </div>
-              <div className="dropdown">
-                <button className="dropbtn">
-                  Аккредитация <i className="fa-solid fa-angle-down" />
-                </button>
-                <div className="dropdown-content">
-                  <Link to="/tool">Институциональдык аккредитация</Link>
-                  <Link to="/program">Программалык акккредитация</Link>
-                </div>
-              </div>
+              
+              <Link to="/tool" className="header__section--items__a">
+              Аккредитация
+              </Link>
               <Link to="/chronology" className="header__section--items__a">
                 Кафедралар
               </Link>
@@ -55,7 +50,7 @@ const Header = () => {
                 Илимий иштер
               </Link>
               <Link to="/curriculum" className="header__section--items__a">
-                Окуунун программасы
+                Адистиктер
               </Link>
             </span>
             <BurgerMenu />

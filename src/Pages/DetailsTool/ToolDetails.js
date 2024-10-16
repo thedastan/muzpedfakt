@@ -4,7 +4,7 @@ import { api } from "../../http/api";
 import "../../styles/CategoryDetails/categoryDetails.scss";
 import Spiner from "../../components/main/Spiner";
 
-const CurriculumDetails = () => {
+const ToolDetails = () => {
   const { id } = useParams();
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);  
@@ -14,7 +14,7 @@ const CurriculumDetails = () => {
   }, []);
 
   useEffect(() => {
-    api.get(`/curriculum/detail/${id}`)
+    api.get(`/accreditation/detail/${id}`)
       .then(({ data }) => {
         setData(data);  
         setLoading(false);  
@@ -51,8 +51,8 @@ const CurriculumDetails = () => {
           <h1>{data.name}</h1>  
 
           <div className="cards">
-            {data.curriculums && data.curriculums.length > 0 ? (
-              data.curriculums.map((science, index) => (
+            {data.accreds && data.accreds.length > 0 ? (
+              data.accreds.map((science, index) => (
                 <div className="box" key={index}>
                   <div className="card">
                     <h2>{science.name_file}</h2> 
@@ -74,4 +74,5 @@ const CurriculumDetails = () => {
   );
 };
 
-export default CurriculumDetails;
+export default ToolDetails;
+

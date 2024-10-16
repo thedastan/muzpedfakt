@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { api } from "../../../http/api";
+import { Link } from "react-router-dom";
 
 const Teachers = () => {
   
@@ -26,14 +27,18 @@ const Teachers = () => {
         <h3 onClick={() => alert(JSON.stringify(datas))}>Жаңылыктар</h3>
         <div className="teachers__sliders">
           {datas.map((el, index) => (
-            <div key={index} className="teachers__sliders--items">
-              <img
+            <div key={index} className="teachers__sliders--items" >
+              <div style={{ width: "254px", height: "250px",  justifyContent: "center",alignItems: "center", overflow: "hidden" }}> 
+              <Link to={`/DetailsNew/${el.id}`}> 
+                <img
                 src={el.image}
                 alt=""
-                style={{ width: "254px", height: "250px" }}
+                style={{width:"100%",height:"100%", objectFit:"cover",borderRadius:"10px"}}
               />
-              <h5>{el.title}</h5>
-              <p>{el.lesson}</p>
+              </Link>
+              </div>
+              <h4 style={{fontSize:"14px" , fontWeight:600,textAlign:"center", marginTop:"10px"}}>{el.title}</h4>
+              {/* <p>{el.description}</p> */}
             </div>
           ))}
         </div>

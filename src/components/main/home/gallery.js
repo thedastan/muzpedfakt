@@ -1,31 +1,53 @@
-import React from 'react';
-import img1 from './../../../images/img1.jpg'
-import img2 from './../../../images/img2.webp'
-import img3 from './../../../images/img3.webp'
-import img4 from './../../../images/img4.jpg'
-import img5 from './../../../images/img6.webp'
+import { useEffect, useState } from "react";
+import { api } from "../../../http/api";
+
+
+import Zoom from 'react-medium-image-zoom'
+import 'react-medium-image-zoom/dist/styles.css'
 
 const Gallery = () => {
-    return (
-        <section id="gallery">
-            <div className="container">
-                <div className="gallery-general">
-                    <h1 className="gallery-general__title">Факультеттин галереясы</h1>
-                    <div>
-                        <img src={img1} alt="img" style={{objectFit:"contain"}} className='gallery-general__img'/>
-                        <span>
-                        <img src={img2} alt="img" style={{objectFit:"cover"}} className='gallery-general__img2' />
-                        <img src={img3} alt="img" style={{objectFit:"cover"}} className='gallery-general__img2'/>
-                        </span>
-                        <span>
-                        <img src={img4} alt="img" style={{objectFit:"cover"}} className='gallery-general__img3' />
-                        <img src={img5} alt="img" style={{objectFit:"cover"}} className='gallery-general__img3' />
-                        </span>
-                    </div>
-                </div>
+
+  const [datas, setDatas] = useState([]);
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const { data } = await api.get("/gallery/"); // Using api.get with the baseURL
+        setDatas(data);
+        console.log(data, "dataGalarea");
+      } catch (error) {
+        console.error("Error fetching data", error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  return (
+    <section id="teachers">
+      <div className="container">
+        <h3 onClick={() => alert(JSON.stringify(datas))}>Факультеттин галереясы</h3>
+        <div style={{display:"flex",flexWrap:"wrap"}} className="teachers__sliders">
+          {datas.map((el, index) => (
+            <div key={index} className="teachers__sliders--items" >
+              <div style={{ width: "250px", height: "100%",  justifyContent: "center",alignItems: "center", overflow: "hidden" }}> 
+                <Zoom> 
+                <img
+                src={el.image}
+                alt=""
+                style={{width:"100%",height:"100%", objectFit:"cover",borderRadius:"10px"}}
+              />
+              </Zoom>
+              
+              </div>
+              <h4 style={{fontSize:"14px" , fontWeight:600,textAlign:"center", marginTop:"10px"}}>{el.title}</h4>
+              {/* <p>{el.description}</p> */}
             </div>
-        </section>
-    );
+          ))}
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default Gallery;
+ 

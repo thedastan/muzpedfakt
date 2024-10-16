@@ -1,7 +1,5 @@
 import React, {useState} from 'react';
 import school from "./../../../images/факультет.jpg"
-import child from "./../../../images/students.png"
-import teach from "./../../../images/teach.png"
 import {media} from "../../media";
 
 const Info = () => {
@@ -23,21 +21,21 @@ const Info = () => {
                         <div className="info-general__block2__gen">
                             <div className="info-general__block2__gen__cer"
                                  style={{width: media(70, 100), height: media(70, 100)}}>
-                                <img src={child} alt="img"/>
+                                <img src='https://static6.depositphotos.com/1000291/574/i/450/depositphotos_5743311-stock-photo-graduate-students.jpg' alt="img"/>
                             </div>
                             <div className="info-general__block2__gen__item">
                                 <h2>Учурдагы студенттер</h2>
-                                <h3>496</h3>
+                                <h3>605</h3>
                             </div>
                         </div>
                         <div className="info-general__block2__gen">
                             <div className="info-general__block2__gen__cer"
                                  style={{width: media(70, 100), height: media(70, 100)}}>
-                                <img src={teach} alt="img"/>
+                                <img src="https://ncrdo.ru/upload/medialibrary/f79/f7923bdbe63a99979beca3b9da2f9fb8.jpg" alt="img"/>
                             </div>
                             <div className="info-general__block2__gen__item">
                                 <h2>Учурдагы мугалимдер</h2>
-                                <h3>57</h3>
+                                <h3>38</h3>
                             </div>
                         </div>
                     </div>

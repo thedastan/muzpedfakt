@@ -1,13 +1,19 @@
 #hero {
   background: #273175 no-repeat bottom/cover;
   min-height: 80vh;
+  text-align: center;
+
 
   .hero-general {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 70px;
-    position: absolute;
+    // display: flex;
+    // justify-content:center ;
+    // align-items: center;
+    // padding-top: 70px;
+    // position: absolute;
+    // text-align: center;
+    // background: red;
+    
+
 
     &__title {
       font-family: 'Montserrat', sans-serif;
@@ -15,8 +21,12 @@
       font-weight: 700;
       font-size: 55px;
       color: #FFFFFF;
-      width: 800px;
+      
+      width: 100%;
       margin-bottom: 60px;
+      text-align: center;
+
+      
     }
 
     &__desc {
@@ -27,24 +37,25 @@
       font-size: 20px;
       color: #FFFFFF;
       margin-bottom: 80px;
+      text-align: center;
     }
 
     &__img {
-      position: relative;
       right: 100px;
       width: 500px;
       top: 0;
+    text-align: center;
+
     }
     &__btn {
       border: 1px solid #fff;
       font-family: 'Montserrat', sans-serif;
       color: #00656B;
-      background: #FFFFFF;
+      background: #f7f7f7;
       border-radius: 18px;
       transition: .4s;
       cursor: pointer;
       display: none;
-      // position: absolute;
       &:hover {
         transform: scale(1.1);
       }
@@ -54,9 +65,8 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      position: absolute;
-      // left: 110px;
       transition: .4s;
+      
 
       &:hover {
         transform: scale(1.1);
@@ -74,8 +84,8 @@
         height: 91px;
         border: 1px solid #FFFFFF;
         border-radius: 50%;
-        position: absolute;
-        left: 0;
+        // position: absolute;
+        // left: 0;
       }
 
       h1 {
@@ -85,6 +95,7 @@
         font-size: 20px;
         padding: 0 15px;
         color: #FFFFFF;
+        margin-left: -50px;
       }
 
       span {
@@ -95,6 +106,7 @@
         }
       }
     }
+    
   }
 }
 
@@ -131,12 +143,13 @@
     display: none;
   }
   #hero .hero-general__title {
-    font-size: 20px !important
+    font-size: 30px !important
+    
   }
   #hero .hero-general__img {  
     margin-top: -87px;
     width: 90%;
-    right: 0;
+    // right: 0;
   }
 
   #hero .hero-general__btn {
@@ -148,3 +161,5 @@
   ;
   }
 }
+
+ 

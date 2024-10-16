@@ -4,7 +4,7 @@ import { api } from "../../http/api";
 import "../../styles/CategoryDetails/categoryDetails.scss";
 import Spiner from "../../components/main/Spiner";
 
-const ScienceDetail = () => {
+const TeachersDetails = () => {
   const { id } = useParams();
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -14,10 +14,11 @@ const ScienceDetail = () => {
   }, []);
 
   useEffect(() => {
-    api.get(`/science/detail/${id}`)
+    api.get(`/news/detail/${id}`)
       .then(({ data }) => {
         setData(data);
         setLoading(false);
+        console.log(data);  // Check the structure of `data`
       })
       .catch((error) => {
         console.error("Error fetching detail data", error);
@@ -37,40 +38,18 @@ const ScienceDetail = () => {
     return <div style={{ padding: "200px" }}>No data found</div>;
   }
 
-  const handleFileClick = (fileUrl) => {
-    if (fileUrl) {
-      window.open(fileUrl, "_blank");
-    }
-  };
-
   return (
     <section id="CategoryDetail" style={{ minHeight: "80vh", padding: "150px 0" }}>
       <div className="container">
         <div className="block">
-          <h1>{data.name}</h1>
+          <img src={data.image} alt={data.title} style={{ maxWidth: "100%", height: "auto" }} />
+          <h1>{data.title}</h1>
 
-          <div className="cards">
-            {data.sciences && data.sciences.length > 0 ? (
-              data.sciences.map((science, index) => (
-                <div className="box" key={index}>
-                  <div className="card">
-                    <h2>{science.name_file}</h2>
-                    
-                    
-                    <button style={{border:"none" , fontSize:"22px", background:"white",cursor:"pointer"}} onClick={() => handleFileClick(science.file)}>
-                    PDF file
-                    </button>
-                  </div>
-                </div>
-              ))
-            ) : (
-              <p>No files available</p>
-            )}
-          </div>
+          <p style={{width:"80%"}}>{data.description}</p>
         </div>
       </div>
     </section>
   );
 };
 
-export default ScienceDetail;
+export default TeachersDetails;

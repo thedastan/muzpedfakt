@@ -1,42 +1,4 @@
-// import React, { useEffect, useState } from "react";
-// import { api } from "../../http/api";
-// import { Link } from "react-router-dom";
-
-// const Curriculum = () => {
-//   const [science, setScience] = useState([]);
-
-//   const fetchData = async () => {
-//     try {
-//       const { data } = await api.get("/curriculum/");
-//       setScience(data);
-//       console.log(data, "data");
-//     } catch (error) {
-//       console.error("Error fetching accreditation data", error);
-//     }
-//   };
-//   useEffect(() => {
-//     fetchData();
-//   }, []);
-//   return (
-//     <section style={{padding:"200px 0"}} id="science">
-//       <div className="container">
-//         <div className="science" style={{display:"flex",flexDirection:"column",gap:"20px"}}>
-//           {science.map((el) => (
-//             <div  >
-//                <Link to={`/DetailsCu/${el.id}`}>
-//                       <h3>{el.name}</h3>
-//                     </Link>
-//             </div>
-//           ))}
-//         </div>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default Curriculum;
-
-import React, { useEffect, useState } from "react";
+ import React, { useEffect, useState } from "react";
 import "../../styles/Chronology/chronology.scss";
 import { media } from "../../components/media";
 import { api } from "../../http/api";
