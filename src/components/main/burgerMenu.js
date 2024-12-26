@@ -82,10 +82,10 @@ function Navbar() {
 
               {/* Дополнительные ссылки */}
               <Link to="/chronology" className="header__section--items__a__2">
-                Кафедра
+                Кафедралар
               </Link>
               <Link to="/chronology" className="header__section--items__a__2">
-                Окуунун программасы
+              Адистер
               </Link>
               <Link to="/chronology" className="header__section--items__a__2">
                 Илимий иштер

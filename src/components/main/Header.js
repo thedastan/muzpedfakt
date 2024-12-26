@@ -50,7 +50,7 @@ const Header = () => {
                 Илимий иштер
               </Link>
               <Link to="/curriculum" className="header__section--items__a">
-                Адистиктер
+                Адистер
               </Link>
             </span>
             <BurgerMenu />
