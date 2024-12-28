@@ -8,7 +8,7 @@ const Hero = () => {
             <div className="container">
                 <div className="hero-general">
                     <div style={{display:"flex", flexDirection:"column", justifyContent:"center", alignItems:"center"}}>
-                        <h1 className="hero-general__title" style={{fontSize: media(60, 45), marginBottom: media(20, 60)}}>Математика жана  Компьютердик <br/> Технологиялар факультети. </h1>
+                        <h1 className="hero-general__title" style={{fontSize: media(60, 45), marginBottom: media(20, 60)}}>Математика жана  компьютердик <br/> технологиялар факультети. </h1>
                         <p className="hero-general__desc" style={{fontSize: media(15, 20)} }>Келечегинди биз менен башта!</p>
 
                         <a href="#onas" className="hero-general__block">
