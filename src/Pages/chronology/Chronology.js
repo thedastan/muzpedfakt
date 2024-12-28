@@ -1,3 +1,5 @@
+ 
+
 import React, { useEffect, useState } from "react";
 import "../../styles/Chronology/chronology.scss";
 import { media } from "../../components/media";
@@ -10,9 +12,9 @@ const Chronology = () => {
 
   const fetchData = async () => {
     try {
-      const { data } = await api.get("/department");  
+      const { data } = await api.get("/department");
       setDataCh(data);
-      console.log(data, "data");
+      console.log(data, "asim");
     } catch (error) {
       console.error("Error", error);
     }
@@ -24,22 +26,22 @@ const Chronology = () => {
   }, []);
 
   return (
-    <section id="chronology" style={{  padding:"200px 0" }}>
+    <section id="chronology" style={{ padding: "200px 0" }}>
       <div className="container">
-        <h1>Кафедра</h1>
+        <h1>Кафедралар</h1>
         <div className="chronology__general">
           {dataCh.length > 0 ? (
-            dataCh?.map((el) => (
-              <div className="chronology__general--datas">
+            dataCh.map((el) => (
+              <div className="chronology__general--datas" key={el.id}>
                 <div className="chronology__general--datas--data">
-                  
                   <div
                     className="chronology__general--datas--data__titles"
                     style={{ width: media(300, 510) }}
                   >
                     <Link to={`/Details/${el.id}`}>
-                      <h3>{el.which_dep}</h3>
+                      <h3>{el.name}</h3>
                     </Link>
+                     
                   </div>
                 </div>
               </div>
@@ -56,3 +58,4 @@ const Chronology = () => {
 };
 
 export default Chronology;
+
