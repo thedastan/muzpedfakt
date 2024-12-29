@@ -1,1 +1,1 @@
-https://mjktf.edu.kg
+https://mjktf.edu.kg/
