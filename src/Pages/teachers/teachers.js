@@ -16,7 +16,7 @@ const Teachers = () => {
         <section id="teach" style={{minHeight:"75vh", padding:"150px 0"}}>
             <div className="container">
                 <div className="tech-general">
-                    <h1 className="teach-general__title">Мугалимдер</h1>
+                    <h1 className="teach-general__title">Профессордук-окутуучулук курам</h1>
                     {
                         teacher.length > 0 ? <div className="teach-general__block">
                             {

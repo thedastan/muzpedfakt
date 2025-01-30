@@ -60,7 +60,7 @@ function Navbar() {
                 </button>
                 <div className="dropdown-content__2">
                   <Link to="/admin">Администрация</Link>
-                  <Link to="/teachers">Мугалимдер</Link>
+                  <Link to="/teachers">Окутуучулар</Link>
                   {data.map((el) => (
                     <Link key={el.id} to={`/category/${el.id}`}>
                       {el.name}

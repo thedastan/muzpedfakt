@@ -25,7 +25,7 @@ const Info = () => {
                             </div>
                             <div className="info-general__block2__gen__item">
                                 <h2>Учурдагы студенттер</h2>
-                                <h3>605</h3>
+                                <h3>1000</h3>
                             </div>
                         </div>
                         <div className="info-general__block2__gen">
@@ -34,8 +34,8 @@ const Info = () => {
                                 <img src="https://ncrdo.ru/upload/medialibrary/f79/f7923bdbe63a99979beca3b9da2f9fb8.jpg" alt="img"/>
                             </div>
                             <div className="info-general__block2__gen__item">
-                                <h2>Учурдагы мугалимдер</h2>
-                                <h3>38</h3>
+                                <h2>Учурдагы Окутуучулар</h2>
+                                <h3>43</h3>
                             </div>
                         </div>
                     </div>
