@@ -34,7 +34,7 @@ const Info = () => {
                                 <img src="https://ncrdo.ru/upload/medialibrary/f79/f7923bdbe63a99979beca3b9da2f9fb8.jpg" alt="img"/>
                             </div>
                             <div className="info-general__block2__gen__item">
-                                <h2>Учурдагы Окутуучулар</h2>
+                                <h2>Учурдагы окутуучулар</h2>
                                 <h3>43</h3>
                             </div>
                         </div>
