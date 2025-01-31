@@ -26,7 +26,7 @@ const Curriculum = () => {
   return (
     <section id="chronology" style={{  padding:"200px 0" }}>
       <div className="container">
-        <h1>Окуунун программасы</h1>
+        <h1> Билим берүү программасы</h1>
         <div className="chronology__general">
           {dataCh.length > 0 ? (
             dataCh?.map((el) => (

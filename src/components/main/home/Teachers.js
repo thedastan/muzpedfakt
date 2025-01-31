@@ -25,7 +25,8 @@ const Teachers = () => {
     <section id="teachers">
       <div className="container">
         <h3 onClick={() => alert(JSON.stringify(datas))}>Жаңылыктар</h3>
-        <div className="teachers__sliders">
+        <div className="box">
+        <div className="teachers__sliders" style={{display:"flex",flexWrap:"wrap"}}>
           {datas.map((el, index) => (
             <div key={index} className="teachers__sliders--items" >
               <div style={{ width: "254px", height: "250px",  justifyContent: "center",alignItems: "center", overflow: "hidden" }}> 
@@ -41,6 +42,7 @@ const Teachers = () => {
               {/* <p>{el.description}</p> */}
             </div>
           ))}
+        </div>
         </div>
       </div>
     </section>

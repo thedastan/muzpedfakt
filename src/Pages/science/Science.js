@@ -26,7 +26,7 @@ const Science = () => {
   return (
     <section id="chronology" style={{  padding:"200px 0" }}>
       <div className="container">
-        <h1>Илимий иштер</h1>
+        <h1>Илимий-изилдөө иштери</h1>
         <div className="chronology__general">
           {dataCh.length > 0 ? (
             dataCh?.map((el) => (

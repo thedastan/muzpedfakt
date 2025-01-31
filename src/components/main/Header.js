@@ -32,7 +32,7 @@ const Header = () => {
                   <i className="fa-solid fa-angle-down" />
                 </button>
                 <div className="dropdown-content">
-                  <Link to="/admin">Администрация</Link>
+                  <Link to="/admin">Факультет</Link>
                   <Link to="/teachers">Окутуучулар</Link>
                   {data.map((el) => (
                     <Link to={`/category/${el.id}`}>{el.name}</Link>
@@ -47,10 +47,10 @@ const Header = () => {
                 Кафедралар
               </Link>
               <Link to="/science" className="header__section--items__a">
-                Илимий иштер
+                Илимий-изилдөө иштери
               </Link>
               <Link to="/curriculum" className="header__section--items__a">
-                Адистер
+              Билим берүү программасы
               </Link>
             </span>
             <BurgerMenu />

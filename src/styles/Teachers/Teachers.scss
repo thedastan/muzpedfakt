@@ -11,43 +11,44 @@
     color: #000000;
     margin: 20px 0;
   }
-  .teachers__sliders {
-    margin-top: 50px;
-    padding: 0 10px;
-    &--items {
-      max-width: 254px;
-      //margin-left: -20px;
-      margin: 0 30px;
-      
-      img {
-        width: 100%;
-      }
-      h5 {
-        font-family: 'Montserrat', sans-serif;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 32px;
-        letter-spacing: 0.1px;
-        color: #000000;
+  .box{
+    .teachers__sliders {
+      margin-top: 50px;
+      padding: 0 10px;
+      &--items {
+        max-width: 254px;
+        margin: 0 30px;
         
+        img {
+          width: 100%;
+        }
+        h5 {
+          font-family: 'Montserrat', sans-serif;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 32px;
+          letter-spacing: 0.1px;
+          color: #000000;
+          
+        }
+        p{
+          font-family: 'Montserrat', sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 32px;
+          letter-spacing: 0.1px;
+          color: #000000;
+        }
       }
-      p{
-        font-family: 'Montserrat', sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 15px;
-        line-height: 32px;
-        letter-spacing: 0.1px;
-        color: #000000;
-      }
-    }
-    .slick-list {
-      overflow: hidden;
-
-      .slick-track {
-        display: flex;
-        width: 97%;
+      .slick-list {
+        overflow: hidden;
+  
+        .slick-track {
+          display: flex;
+          width: 97%;
+        }
       }
     }
   }

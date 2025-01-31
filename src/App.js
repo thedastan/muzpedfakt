@@ -19,6 +19,7 @@ import ScienceDetail from "./Pages/DetailsSc/ScienceDetail";
 import CurriculumDetails from "./Pages/DetailsCu/CurriculumDetails";
 import ToolDetails from "./Pages/DetailsTool/ToolDetails";
 import TeachersDetails from "./Pages/DetailsNew/TeachersDetails";
+import AdminDetails from "./Pages/adminDetails/AdminDetails";
 
 function App() {
   return (
@@ -40,6 +41,8 @@ function App() {
         <Route path="/DetailsCu/:id" element={<CurriculumDetails />} />
         <Route path="/DetailsTool/:id" element={<ToolDetails />} />
         <Route path="/DetailsNew/:id" element={<TeachersDetails />} />
+        <Route path="/adminDetails/:id" element={<AdminDetails />} />
+
 
 
 
