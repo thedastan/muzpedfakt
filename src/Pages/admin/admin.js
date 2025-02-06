@@ -57,7 +57,7 @@ const Admin = () => {
     </section> */}
      <section id="chronology" style={{  padding:"200px 0" }}>
       <div className="container">
-        <h1>Илимий-изилдөө иштери</h1>
+        {/* <h1>Илимий-изилдөө иштери</h1> */}
         <div className="chronology__general">
           {admin.length > 0 ? (
             admin?.map((el) => (

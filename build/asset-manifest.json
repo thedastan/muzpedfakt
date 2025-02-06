@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.1030fcff.css",
-    "main.js": "/static/js/main.2ed091e4.js",
+    "main.js": "/static/js/main.cbc05165.js",
     "static/media/факультет.jpg": "/static/media/факультет.5edce82160f199930b37.jpg",
     "static/media/fa-solid-900.ttf": "/static/media/fa-solid-900.79da213423ac0def2058.ttf",
     "static/media/oshmpu.jpg": "/static/media/oshmpu.67855f57c56ace6e2b7f.jpg",
@@ -14,10 +14,10 @@
     "static/media/fa-v4compatibility.woff2": "/static/media/fa-v4compatibility.3d503f89ccaf1b224aa5.woff2",
     "index.html": "/index.html",
     "main.1030fcff.css.map": "/static/css/main.1030fcff.css.map",
-    "main.2ed091e4.js.map": "/static/js/main.2ed091e4.js.map"
+    "main.cbc05165.js.map": "/static/js/main.cbc05165.js.map"
   },
   "entrypoints": [
     "static/css/main.1030fcff.css",
-    "static/js/main.2ed091e4.js"
+    "static/js/main.cbc05165.js"
   ]
 }
