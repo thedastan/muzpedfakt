@@ -13,6 +13,8 @@ const AdminDetails = () => {
 		window.scrollTo(0, 0);
 	}, []);
 
+	console.log(data);
+
 	useEffect(() => {
 		api
 			.get(`/administration/${id}`)
@@ -52,22 +54,24 @@ const AdminDetails = () => {
 				<div className="block">
 					<h1>{data.fullname}</h1>
 
-					<div className="cards">
-						<div className="box"  >
-							<div className="card">
-								<h2>{data.fullname}</h2>
-								<button
-									style={{
-										border: "none",
-										fontSize: "22px",
-										background: "white",
-										cursor: "pointer",
-									}}
-									onClick={() => handleFileClick(data.file)}>
-									PDF file
-								</button>
+					<div   className="cards">
+						{data.filefield_administration.map((el, index) => (
+							<div key={index} className="box">
+								<div className="card">
+									<h2>{el.name_file}</h2>
+									<button
+										style={{
+											border: "none",
+											fontSize: "22px",
+											background: "white",
+											cursor: "pointer",
+										}}
+										onClick={() => handleFileClick(el.file)}>
+										PDF file
+									</button>
+								</div>
 							</div>
-						</div>
+						))}
 					</div>
 				</div>
 			</div>
