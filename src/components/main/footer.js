@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from "./../../images/oshmpu.jpg"
+import logo from "./../../images/logo-music.png"
 import {media} from "../media";
 
 const Footer = () => {
@@ -12,7 +12,12 @@ const Footer = () => {
                         <img src={logo} alt="" style={{width:'100px', height:'100px', borderRadius: '50%'}}/>
                         <div className="footer-general__contact" style={{paddingTop: media(10, 40)}}>
                             <span><i className="fa-solid fa-phone"/></span>
-                            <a href="tel:+996772621772">+996(772)621772</a>
+                            <a href="tel:+996505011902">+996 505-01-19-02</a>
+                        </div>
+                        <div className="footer-general__contact" style={{paddingTop: media(10, 40)}}>
+                        <span><i className="fa-solid fa-phone"/></span>
+                        <a href="tel:+996221272769">+996 221-27-27-69</a>
+                            
                         </div>
                     </div>
                     <div className="footer-general__center">

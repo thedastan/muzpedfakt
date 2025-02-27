@@ -55,10 +55,10 @@ const AdminDetails = () => {
 					<h1>{data.fullname}</h1>
 
 					<div   className="cards">
-						{data.filefield_administration.map((el, index) => (
-							<div key={index} className="box">
+						{/* {data.filefield_administration.map((el, index) => ( */}
+							<div   className="box">
 								<div className="card">
-									<h2>{el.name_file}</h2>
+									<h2>{data.fullname}</h2>
 									<button
 										style={{
 											border: "none",
@@ -66,12 +66,12 @@ const AdminDetails = () => {
 											background: "white",
 											cursor: "pointer",
 										}}
-										onClick={() => handleFileClick(el.file)}>
+										onClick={() => handleFileClick(data.file)}>
 										PDF file
 									</button>
 								</div>
 							</div>
-						))}
+						{/* ))} */}
 					</div>
 				</div>
 			</div>

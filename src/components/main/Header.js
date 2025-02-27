@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../../styles/Header/header.scss";
-import logo from "../../images/oshmpu.jpg";
+import logo from "./../../images/logo-music.png"
 import { Link } from "react-router-dom";
 import { api } from "../../http/api";
 import BurgerMenu from "./burgerMenu";
@@ -34,9 +34,9 @@ const Header = () => {
                 <div className="dropdown-content">
                   <Link to="/admin">Факультет</Link>
                   <Link to="/teachers">Окутуучулар</Link>
-                  {data.map((el) => (
+                  {/* {data.map((el) => (
                     <Link to={`/category/${el.id}`}>{el.name}</Link>
-                  ))}
+                  ))} */}
                 </div>
               </div>
               

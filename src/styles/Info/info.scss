@@ -11,13 +11,13 @@
       width: 100%;
       height: 6px;
       border-radius: 20px;
-      background: #00656B;
+      background: #05a10c;
       margin-bottom: 50px;
     }
 
     &__block {
       div {
-        background: #FC724D;
+        background: #197c10;
         position: absolute;
         z-index: -1;
       }
@@ -87,7 +87,7 @@
             font-style: normal;
             font-weight: 500;
             font-size: 22px;
-            color: #00656B
+            color: #36be00
           ;
           }
         }
@@ -112,7 +112,7 @@
     button {
       width: 250px;
       height: 50px;
-      border: 2px solid #00656B
+      border: 2px solid #0eaa00
     ;
       background: transparent;
       border-radius: 16px;
@@ -120,13 +120,13 @@
       font-style: normal;
       font-weight: 600;
       font-size: 18px;
-      color: #00656B
+      color: #33b101
     ;
       cursor: pointer;
       transition: .4s;
 
       &:hover {
-        background: #00656B
+        background: #00d100
       ;
         transform: scale(1.1);
         color: white;

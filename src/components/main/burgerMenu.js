@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { api } from "../../http/api";
-import logo from "./../../images/oshmpu.jpg";
+import logo from "./../../images/logo-music.png";
 
 function Navbar() {
   const [sidebar, setSidebar] = useState(false);

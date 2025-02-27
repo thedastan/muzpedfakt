@@ -1,6 +1,6 @@
 #header {
-  background: rgba(19, 61, 124, 0.61);
-  // background: rgba(0, 34, 84, 0.61);
+  background: rgba(60, 255, 0, 0.425);
+  // background: rgba(12, 12, 12, 0.445);
 
   backdrop-filter: blur(5px);
   position: fixed;
@@ -14,7 +14,7 @@
     &--items{
       &__a , Link {
         color: #FFFFFF;
-        padding: 5px 16px;
+        padding: 5px 6px;
         font-family: 'Montserrat', sans-serif;
         font-style: normal;
         font-weight: 500;
