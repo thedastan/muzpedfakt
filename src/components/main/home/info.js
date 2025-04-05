@@ -2,7 +2,10 @@ import React, { useEffect, useState } from "react";
 import school from "../../../images/homeimg.jpg";
 import { media } from "../../media";
 import { api } from "../../../http/api";
- 
+
+import tisher from "../../../images/tisher.jpg"
+import stydent from "../../../images/stydent.jpg"
+
 
 const Info = () => {
 	const [modal, setModal] = useState(false);
@@ -63,7 +66,7 @@ const Info = () => {
 								className="info-general__block2__gen__cer"
 								style={{ width: media(70, 100), height: media(70, 100) }}>
 								<img
-									src="https://static6.depositphotos.com/1000291/574/i/450/depositphotos_5743311-stock-photo-graduate-students.jpg"
+									src={stydent}
 									alt="img"
 								/>
 							</div>
@@ -79,7 +82,7 @@ const Info = () => {
 								className="info-general__block2__gen__cer"
 								style={{ width: media(70, 100), height: media(70, 100) }}>
 								<img
-									src="https://ncrdo.ru/upload/medialibrary/f79/f7923bdbe63a99979beca3b9da2f9fb8.jpg"
+									src={tisher}
 									alt="img"
 								/>
 							</div>
