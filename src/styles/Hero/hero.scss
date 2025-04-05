@@ -1,7 +1,9 @@
 #hero {
-  background: #00ff4094 no-repeat bottom/cover;
+  // background: #00ff4094 no-repeat bottom/cover;
+  background-image: url("http://localhost:3000/static/media/homeimg.ec5ff070ceb5ad02e853.jpg");
   min-height: 80vh;
   text-align: center;
+  background-size: cover;
 
 
   .hero-general {

@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
-import school from "./../../../images/факультет.jpg";
+import school from "../../../images/homeimg.jpg";
 import { media } from "../../media";
 import { api } from "../../../http/api";
+ 
 
 const Info = () => {
 	const [modal, setModal] = useState(false);

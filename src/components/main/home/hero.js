@@ -7,8 +7,7 @@ const Hero = () => {
 			id="hero"
 			style={{
 				paddingTop: media(0, 70),
-				backgroundImage:
-					"url('https://kaznai.kz/wp-content/uploads/2021/06/EDDJfEA.jpg')",
+				 
 			}}>
 			<div
 				style={{
@@ -17,7 +16,7 @@ const Hero = () => {
 					justifyContent: "center",
 					alignItems: "center",
 					textAlign: "center",
-					background: "rgba(12, 12, 12, 0.445)",
+					background: "rgba(12, 12, 12, 0.6)",
 					height: "92vh",
 					position: "absolute",
 					top: "0px",
@@ -37,13 +36,13 @@ const Hero = () => {
 									fontSize: media(60, 45),
 									marginBottom: media(20, 60),
 								}}>
-								Музыкалык-педагогикалык факультети
+							🎵 "Педагогиканын күчү, музыканын сыйкыры,  психологиянын тереңдиги – кемелдүү келечек үчүн!" ✨📖🎶
 							</h1>
-							<p
+							{/* <p
 								className="hero-general__desc"
 								style={{ fontSize: media(15, 20) }}>
 								Келечегинди биз менен башта!
-							</p>
+							</p> */}
 
 							<a href="#onas" className="hero-general__block">
 								<div />
