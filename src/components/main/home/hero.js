@@ -1,26 +1,14 @@
-import React from "react";
+import img from "../../../images/homeimg.jpg";
 import { media } from "../../media";
 
 const Hero = () => {
 	return (
-		<section
-			id="hero"
-			style={{
-				paddingTop: media(0, 70),
-				 
-			}}>
-			<div
-				style={{
-					width: "100%",
-					display: "flex",
-					justifyContent: "center",
-					alignItems: "center",
-					textAlign: "center",
-					background: "rgba(12, 12, 12, 0.6)",
-					height: "92vh",
-					position: "absolute",
-					top: "0px",
-				}}>
+		<section id="hero">
+
+			<div className="hero_img">
+				<img src={img} alt="img" />
+			</div>
+			<div className="block_hero">
 				<div className="container">
 					<div className="hero-general">
 						<div
@@ -36,7 +24,8 @@ const Hero = () => {
 									fontSize: media(60, 45),
 									marginBottom: media(20, 60),
 								}}>
-							🎵 "Педагогиканын күчү, музыканын сыйкыры,  психологиянын тереңдиги – кемелдүү келечек үчүн!" ✨📖🎶
+								🎵 "Педагогиканын күчү, музыканын сыйкыры, психологиянын
+								тереңдиги – кемелдүү келечек үчүн!" ✨📖🎶
 							</h1>
 							{/* <p
 								className="hero-general__desc"

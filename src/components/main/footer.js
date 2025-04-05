@@ -8,12 +8,20 @@ const Footer = () => {
 			<div className="container">
 				<div className="footer-general">
 					<div>
-						<img
-							src={logo}
-							alt=""
-							style={{ width: "100px", height: "100px", borderRadius: "50%" }}
-						/>
-						 
+						<div
+							style={{
+								display: "flex",
+								justifyContent: "center",
+								alignItems: "center",
+                                paddingBottom:"10px"
+							}}>
+							<img
+								src={logo}
+								alt="img"
+								style={{ width: "100px", height: "100px", borderRadius: "50%" }}
+							/>
+						</div>
+
 						<div
 							className="footer-general__contact"
 							style={{ paddingTop: media(10, 40) }}>
@@ -24,13 +32,17 @@ const Footer = () => {
 						</div>
 					</div>
 					<div className="footer-general__center">
-						<a href="mailto:oshmpumuzpedfak@gmail.com">oshmpumuzpedfak@gmail.com</a>
+						<a href="mailto:oshmpumuzpedfak@gmail.com">
+							oshmpumuzpedfak@gmail.com
+						</a>
 					</div>
 					<div className="footer-general__seti">
 						<h1>Соц тармактар</h1>
 						<span>
 							{" "}
-							<a target={"_blank"} href="https://www.instagram.com/oshmpu.muz_ped_fak?igsh=ZjVsYWFrdjVocXI=">
+							<a
+								target={"_blank"}
+								href="https://www.instagram.com/oshmpu.muz_ped_fak?igsh=ZjVsYWFrdjVocXI=">
 								<span style={{ fontSize: media(15, 20) }}>
 									<i className="fab fa-instagram" />
 								</span>
