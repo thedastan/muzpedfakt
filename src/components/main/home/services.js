@@ -7,7 +7,7 @@ const Services = () => {
   return (
     <section id="services">
       <div className="container">
-        <h3>Байланышуу учун :</h3>
+        <h3>Байланышуу үчүн :</h3>
         <div className="services__general">
           <div className="services__general--contact">
             
